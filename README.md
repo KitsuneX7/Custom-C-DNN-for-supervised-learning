@@ -20,12 +20,12 @@ To get the framework up and running, follow these steps to prepare your dataset,
 ### 1. Compilation
 Ensure you have a modern C++ compiler supporting C++20 and OpenMP enabled. Compile the project with maximum optimization flags using the following command:
 
-g++ -O3 -std=c++20 -fopenmp output/dataset.cpp -o nnet_benchmark
+g++ -O3 -std=c++20 -fopenmp output/dataset.cpp -o dataset
 
 ### 2. Execution
 Run the compiled binary directly from your terminal with this command:
 
-./nnet_benchmark
+./dataset
 
 ### 3. Interactive Configuration
 Upon launching, the program will prompt you to enter a configuration integer corresponding to your desired activation function profile. Type your chosen integer into the console prompt and hit Enter:
@@ -42,10 +42,10 @@ The network will automatically partition the dataset into training and testing s
 
 ## Repository Structure
 
-* **output/dataset.cpp** - Core execution blueprint and interactive CLI loop handling.
+* **dataset.cpp** - Core execution blueprint and interactive CLI loop handling.
 * **MLP.hpp** - The central engine architecture housing forward propagation, backpropagation calculus, and memory-aligned layer matrices.
 
 ---
 
 ## Data Attribution
-This project utilizes the Open Database License (ODbL) 1.0 Credit Card Fraud Detection dataset created by the Machine Learning Group at Université Libre de Bruxelles (ULB).
+This project utilizes the Open Database License (ODbL) 1.0 Credit Card Fraud Detection dataset created by the Machine Learning Group at Université Libre de Bruxelles (ULB). Link to csv dataset: https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud?resource=download
