@@ -43,6 +43,7 @@ int main() {
     std::cout << "Enter the desired activation function\n0 - ReLU\n1 - GeLU\n2 - sigmoid\n3 - tanh\n4 - leaky ReLU\n";
     uint16_t function;
     std::cin >> function;
+    if (function > 4) return 1;
     // memory buffers
     std::vector<std::float32_t> X(X_size);
     std::vector<uint8_t> y(y_size);
