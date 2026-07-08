@@ -255,7 +255,7 @@ private:
             // sigmoid
             case 2: {
                 std::float32_t sigmoid = 1.0f / (1.0f + std::exp(-neuron));
-                return sigmoid - (1.0f - sigmoid);
+                return sigmoid * (1.0f - sigmoid);
             }
             // tanh
             case 3: {
