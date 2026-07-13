@@ -91,7 +91,7 @@ if ans != 0 and ans != 1 and ans != 2 and ans != 3:
 if ans != 3: 
     domains = [[-3, -1.8], [-1.8, -1], [-1, -0.4], [-0.4, 0], [0, 0.4], [0.4, 1], [1, 1.8], [1.8, 3]]
 else:
-    domains = [[-6,0]]
+    domains = [[-6,-3], [-3, -1], [-1, 0]]
 
 epsilon = 0.005  # Maximum allowable error bound
 
@@ -188,4 +188,3 @@ for i in range(len(all_x_spline)):
         dot = ""
     print("{"+float_to_hex(all_x_spline[i])+","+float_to_hex(all_slopes[i])+","+float_to_hex(all_intercepts[i])+"}"+dot)
 print("}\n")
-
