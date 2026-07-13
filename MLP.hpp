@@ -254,13 +254,11 @@ private:
             }
             // sigmoid
             case 2: {
-                std::float32_t sigmoid = 1.0f / (1.0f + std::exp(-neuron));
-                return sigmoid - (1.0f - sigmoid);
+                return neuron * (1.0f - neuron);
             }
             // tanh
             case 3: {
-                std::float32_t myTanh = std::tanh(neuron);
-                return 1.0f - myTanh * myTanh;
+                return 1.0f - neuron * neuron;
             }
             // leaky ReLU
             case 4: {
